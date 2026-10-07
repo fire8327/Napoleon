@@ -358,7 +358,7 @@ ul, ol {
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
-  gap: 24px;
+  gap: clamp(16px, 2.5vw, 32px);
 }
 
 /* Brand Identity */
@@ -367,6 +367,7 @@ ul, ol {
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .brand-monogram {
@@ -416,12 +417,13 @@ ul, ol {
 .nav-menu {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .nav-links-wrap {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(12px, 1.6vw, 24px);
 }
 
 .nav-link {
@@ -430,6 +432,8 @@ ul, ol {
   color: var(--c-text-body);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: color var(--transition-fast);
 }
 
@@ -455,7 +459,8 @@ ul, ol {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .phone-badge {
@@ -469,6 +474,8 @@ ul, ol {
   border-radius: var(--radius-full);
   background-color: var(--c-bg-subtle);
   border: 1px solid var(--border-light);
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all var(--transition-fast);
 }
 
@@ -480,6 +487,8 @@ ul, ol {
 .header-cta {
   padding: 10px 20px;
   font-size: 0.875rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* Mobile Toggle */
@@ -1750,6 +1759,24 @@ ul, ol {
 /* ==========================================================================
    17. COMPREHENSIVE RESPONSIVE DESIGN (TABLETS & PHONES)
    ========================================================================== */
+
+/* Medium Desktops & Laptops (1041px to 1220px) */
+@media (max-width: 1220px) and (min-width: 1041px) {
+  .nav-links-wrap {
+    gap: 14px;
+  }
+  .nav-link {
+    font-size: 0.875rem;
+  }
+  .phone-badge {
+    padding: 7px 11px;
+    font-size: 0.8125rem;
+  }
+  .header-cta {
+    padding: 8px 16px;
+    font-size: 0.8125rem;
+  }
+}
 
 /* Laptops & Tablets (<= 1040px) */
 @media (max-width: 1040px) {
