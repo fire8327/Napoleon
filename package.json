@@ -1,0 +1,13 @@
+{
+  "name": "napoleon-cafe-landing",
+  "version": "1.0.0",
+  "description": "Премиальный современный минималистичный лендинг для кафе-кондитерской Napoleon в Канаше",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["napoleon", "cafe", "landing", "kanash"],
+  "author": "Napoleon Cafe",
+  "license": "ISC"
+}
