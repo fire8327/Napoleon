@@ -61,24 +61,35 @@
 
       <!-- Desktop Nav & Mobile Drawer -->
       <nav class="nav-menu" aria-label="Главная навигация">
-        <a href="#craft" class="nav-link">О нас</a>
-        <a href="#vitrine" class="nav-link">Витрина</a>
-        <a href="#atelier" class="nav-link">Торты на заказ</a>
-        <a href="#space" class="nav-link">Атмосфера</a>
-        <a href="#reviews" class="nav-link">Отзывы</a>
-        <a href="#location" class="nav-link">Контакты</a>
+        <div class="nav-links-wrap">
+          <a href="#craft" class="nav-link">О кондитерской</a>
+          <a href="#vitrine" class="nav-link">Витрина десертов</a>
+          <a href="#atelier" class="nav-link">Торты на заказ</a>
+          <a href="#space" class="nav-link">Атмосфера и зал</a>
+          <a href="#reviews" class="nav-link">Отзывы гостей</a>
+          <a href="#location" class="nav-link">Контакты и адрес</a>
+        </div>
 
         <!-- Drawer Footer for Mobile -->
         <div class="drawer-footer">
-          <a href="tel:+79370116181" class="drawer-contact-a">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            +7 (937) 011-61-81
-          </a>
-          <a href="https://wa.me/79370116181?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%B2%20%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9%20Napoleon" target="_blank" rel="noopener noreferrer" class="drawer-contact-a whatsapp">
-            Написать в WhatsApp
-          </a>
+          <div class="drawer-info-note">
+            <span class="drawer-addr">г. Канаш, проспект Ленина, 26</span>
+            <span class="drawer-hours">Ежедневно с 10:00 до 19:00</span>
+          </div>
+          <div class="drawer-btns-row">
+            <a href="tel:+79370116181" class="drawer-contact-a phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Позвонить</span>
+            </a>
+            <a href="https://wa.me/79370116181?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%B2%20%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9%20Napoleon" target="_blank" rel="noopener noreferrer" class="drawer-contact-a whatsapp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.09 7.35C8.92 7.35 8.64 7.41 8.41 7.66C8.18 7.91 7.53 8.52 7.53 9.77C7.53 11.02 8.44 12.22 8.56 12.39C8.69 12.56 10.35 15.11 12.87 16.2C13.47 16.46 13.93 16.61 14.3 16.73C14.9 16.92 15.45 16.89 15.88 16.83C16.36 16.76 17.37 16.22 17.58 15.63C17.79 15.04 17.79 14.54 17.73 14.43C17.67 14.33 17.5 14.27 17.25 14.15C17 14.02 15.77 13.42 15.54 13.33C15.31 13.25 15.15 13.21 14.98 13.46C14.81 13.71 14.34 14.27 14.19 14.43C14.05 14.6 13.91 14.62 13.66 14.5C13.41 14.37 12.61 14.11 11.66 13.26C10.92 12.6 10.42 11.78 10.28 11.53C10.13 11.28 10.26 11.14 10.39 11.02C10.5 10.91 10.63 10.74 10.76 10.59C10.88 10.44 10.93 10.34 11 10.17C11.09 10 11.05 9.85 10.99 9.73C10.93 9.6 10.46 8.45 10.26 7.97C10.07 7.5 9.87 7.56 9.72 7.55C9.58 7.55 9.41 7.35 9.09 7.35Z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
       </nav>
 
